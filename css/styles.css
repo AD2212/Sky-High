@@ -1,0 +1,105 @@
+body {
+  background-color: #ebffeb;
+}
+
+/*==================navbar=================================*/
+.icon{
+   color: grey;
+   font-family: 'Montserrat', sans-serif;
+}
+.icon:hover{
+   color: black;
+}
+.icon-margin{
+   margin-right: 10px;
+}
+.center-nav{
+   margin-right: 230px;
+}
+/*===================================carousel======================*/
+.carousel-size {
+  height: 450px;
+}
+.carousel-btn{
+   background-color: greenyellow;
+}
+/*================================cards=======================*/
+
+.hr-2{
+   border-width: 1px;
+   border-style: groove;
+   border-top: 0;
+   /* border-color: black; */
+   width: 60rem;
+}
+.hr-grey{
+   color: dimgray;
+}
+.card-title {
+  text-align: center;
+}
+.card-img-top {
+   height: 10rem;
+ }
+ .card-img{
+    height: 18rem;
+ }
+ @media only screen and (max-width: 768px) {
+   /* For mobile phones: */
+   .card {
+     margin-left: 13%;
+   }
+ }
+/*=====================filter===================*/
+.filter-btn{
+   width: 80px;
+}
+/*========================footer===========================*/
+footer {
+	padding:20px;
+   background:#a8df65 !important;
+   color:white
+}
+.icon-align{
+vertical-align: -webkit-baseline-middle
+}
+.icon-f{
+   margin: 5px;
+   margin-bottom: 0;
+   color: whitesmoke;
+}
+.sub-footer  {
+	background:#030303;
+   padding:30px;
+   color: floralwhite;
+   text-align: center;
+}
+
+footer h4 {
+	margin-bottom:30px;
+	text-transform:uppercase;
+	text-shadow:none;
+	font-weight:550;
+	color:#fff;
+}
+
+.mobile{
+  margin-left: -1cm;
+}
+
+.footer-mid{
+   margin-top:2cm;
+   margin-left:-0.5cm;
+   position: relative;
+}
+
+
+.form-group{
+  padding: 5px;
+  width: 80%;
+}
+
+.link-color{
+color:white;
+}
+/*------------------------------------------------------*/
