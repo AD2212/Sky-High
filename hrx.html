@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png"/>
+  <title>HRX products</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/Signin.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!---------------------------------Header----------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #dcffcc;">
+      <a class="navbar-brand" href="#"> <img src="img/logo.png" style="height: 55px; width: 55px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="men.html">MEN <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">KIDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Shoes.html">SHOES <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" style="width: 300px;" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" title="Search" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <!--------SIGNIN-------->
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#staticBackdrop">LOGIN</a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!------------>
+                    <div class="signup-form">
+                      <form action="/examples/actions/confirmation.php" method="post">
+                        <h2>Sign in your Account</h2>
+                        <div class="social-btn text-center">
+                          <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+                          <a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
+                          <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+                        </div>
+                        <div class="or-seperator"><b>OR</b></div>
+                        <div class="form-group">
+                          <input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign In</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!------------------->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link center-nav" href="#">SIGNUP</a>
+          </li>
+          <li class="nav-item">
+            <i class="far fa-bookmark"><a class=" icon icon-margin" href="#">Wishlist</a></i>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-shopping-cart"><a class="icon" style="font-family: 'Montserrat', sans-serif;" href="#">Cart</a></i>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <!-------------------->
+  <div class="alert alert-success" role="alert" style="padding-bottom: 0; margin-bottom: 0;">
+    <p><b>HRX - Clothing and Accesories</b> - 217 Items</p>
+   </div>
+<!----------------------sidenav-------------------->
+  <div class="sidenav">
+    <h3>Filters</h3>
+    <hr style="margin: 0; margin-bottom: 5px;">
+    <div class="container">
+    <h5>Categories</h5>
+    <input type="checkbox" aria-label="Checkbox for following text input"> T-Shirts<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Shirts<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Sweat-shirt<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Jackets<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Hoodies<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Sweaters<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Jean<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Trouser<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Tops<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Track Pants<br>
+    <a href="#">+ 8 more</a>
+    </div>
+
+<!------------------>
+  <hr style="margin: 0; margin-bottom: 5px;">
+  <div class="container">
+    <h5>Colour</h5>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Black<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Red<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Navy Blue<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Grey<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Maroon<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Purple<br>
+    <input type="checkbox" aria-label="Checkbox for following text input"> Lime Green<br>
+    <a href="#">+ 15 more</a>
+    </div>
+<!------------------>
+<hr style="margin: 0; margin-bottom: 5px;">
+<div class="container">
+  <h5>Discount</h5>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Upto 10%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 10%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 20%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 30%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 40%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 50%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 60%<br>
+  <input type="checkbox" aria-label="Checkbox for following text input"> Above 70%<br>
+  <!-- <button class="btn btn-outline-success btn-sm filter-btn" style="margin: 7px;">Filter</button> -->
+  </div>
+  <!------------------>
+  <hr style="margin: 0; margin-bottom: 5px;">
+  <div class="container">
+    <h5>Price Range</h5>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 149 to 249<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 249 to 499<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 499 to 999<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 999 to 1599<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 1599 to 2199<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 2199 to 3399<br>
+          <input type="checkbox" aria-label="Checkbox for following text input"> Rs. 3399 to 4999<br>
+    </div>
+ <!------------------>
+ <hr style="margin: 0; margin-bottom: 5px;">
+ <div class="container">
+   <h5>Size</h5>
+         <input type="checkbox" aria-label="Checkbox for following text input"> XXL<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> 3XL<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> XL<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> L<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> M<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> S<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> XS<br>
+         <a href="#">+ 7 more</a>
+   </div>
+    <!------------------>
+ <hr style="margin: 0; margin-bottom: 5px;">
+ <div class="container">
+   <h5>Occasion</h5>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Casual<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Sports<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Party<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Formal<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Beach Wear<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Lounge Wear<br>
+         <a href="#">+ 7 more</a>
+   </div>
+      <!------------------>
+ <hr style="margin: 0; margin-bottom: 5px;">
+ <div class="container">
+   <h5>Pattern</h5>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Printed<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Solid<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Striped<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Graphic Print<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Textured<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Abstract<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Broad Stripes<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Conversational<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Geometric Print<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Aztec<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Ombre<br>
+         <a href="#">+ 25 more</a>
+   </div>
+       <!------------------>
+ <hr style="margin: 0; margin-bottom: 5px;">
+ <div class="container">
+   <h5>Ideal For</h5>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Men<br>
+         <input type="checkbox" aria-label="Checkbox for following text input"> Women<br>
+   </div>
+   <hr style="margin: 0; margin-bottom: 5px;">
+   <div class="container">
+     <h5>Neck Type</h5>
+           <input type="checkbox" aria-label="Checkbox for following text input"> Hooded Neck<br>
+           <input type="checkbox" aria-label="Checkbox for following text input"> High Neck<br>
+     </div>
+     <hr style="margin: 0; margin-bottom: 5px;">
+     <div class="container">
+       <h5>Sleeve Type</h5>
+             <input type="checkbox" aria-label="Checkbox for following text input"> Full Sleeve<br>
+             <input type="checkbox" aria-label="Checkbox for following text input"> Half Sleeve<br>
+       </div>
+
+
+
+
+    </div>
+  <!---------------------------------------- Page content ----------------------------------------------->
+  <br>
+  <div class="main">
+    <div class="media position-relative">
+      <img src="img/hrx1.webp" class="mr-3  col-lg-3 col-md-6 col-sm-12" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0"> Men Orange Printed Regular Fit Running T-shirt</h5>
+        <h4> <b> Rs.1550 (40% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">With the HRX Men's Running T-shirt you can enjoy a run no matter what the temperature and humidity levels are outside.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx2.webp" class="mr-3  col-lg-3 col-md-6 col-sm-12" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Men Teal Blue Solid Sweatshirt</h5>
+        <h4> <b> Rs.850 (50% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">Teal blue solid sweatshirt, has a round neck, long sleeves, straight hem</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx3.webp" class="mr-3  col-lg-3 col-md-6 col-sm-12" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Blue light running Jacket</h5>
+        <h4> <b> Rs.550 (60% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">HRX Men's Running Light Active Jacket helps you complete your daily run even when it's windy outside. This jacket is everything you need - lightweight, hooded and smart.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx4.webp" class="mr-3  col-lg-3 col-md-6 col-sm-12" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Women Navy Blue Solid Sporty Jacket</h5>
+        <h4> <b> Rs.1400 (30% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">The HRX Women's Running Jacket keeps you safe from the wind while you run even when the weather's not on your side. After a good run, it regulates your body temperature so that you don't catch a chill.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx5.webp" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Lightly padded sports Bra</h5>
+        <h4> <b> Rs.1050 (40% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">Along with technology enhanced fabric to wick away sweat, the HRX Women's Medium Support Training Sports Bra features a mesh panel at the back for ventilation.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx6.webp" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Men Olive Green Fullsleeve Crew Neck Tshirts</h5>
+<h4> <b> Rs.700 (30% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">The HRX Men's Lifestyle T-shirts are designed to be versatile. Whether you pair them with chinos or track pants, you're sure to be noticed for your sporty style.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <!-- <div class="media position-relative">
+      <img src="img/hrx7.webp" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Men Soft Walk Series Black Running Shoes</h5>
+        <h4> <b> Rs.2100 (30% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">Designed to provide neutral support to your feet and ankle.
+          Constructed with knitted fabric.
+          Cushion collar provides ankle support.
+          EVA midsole makes shoes Lightweight without compromising on cushioning.
+          </p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div> -->
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx8.webp" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Black Active Hooded Jacket</h5>
+        <h4> <b> Rs.1400 (30% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">Black jacket, has an attached hood, long sleeves, a full zip closure, two pockets, hem with toggle detailing</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+    <br>
+    <!-- <div class="media position-relative">
+      <img src="img/hrx9.jpg" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Men light shoes</h5>
+        <h4> <b> Rs.1700 (30% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">Specs Ideal for running on roads
+Designed to provide neutral support to your feet and ankle
+Breathable upper keeps feet cool and dry
+Counter clutch helps maintain a strong grip while running
+EVA sole makes the shoe lightweight
+</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div> -->
+    <br>
+    <div class="media position-relative">
+      <img src="img/hrx10.jpg" class="mr-3  col-lg-3" alt="...">
+      <div class="media-body col-lg-6">
+        <h5 class="mt-0">HRX by Hrithik Roshan</h5>
+        <h5 class="mt-0">Men Olive Green Solid Bio-Wash Training T-shirt</h5>
+        <h4> <b> Rs.500 (40% off) </b> </h4>
+        <b>
+          <h5 class="mt-0">Product Details</h5>
+        </b>
+        <p class="text">With an athletic cut, the HRX Men's Training T-shirt is great for a workout at home or outdoors. It gives you freedom to move any way you'd like, feels soft against your skin and lets your skin breathe while you workout.</p>
+        <a href="#" class="stretched-link">BUY NOW</a>
+      </div>
+    </div>
+  </div>
+  <br><br> <br>
+<p class="pages"><a href="#"><b>1</b></a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a>
+  <a href="#">6</a> <a href="#">7</a> <a href="#">....</a> <a href="#">15</a>
+  <button class="btn btn-sm btn-outline-success">Next ></button> </p>
+  <!-------------------------------Footer--------------------------------------------->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 wow fadeInDown">
+          <h4>Contact Us</h4>
+          <div class="contact-info">
+            <ul type="none" class="mobile">
+              <li class="text">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                Suite 54 Elizebth Street, Victoria State Newyork, USA </li>
+
+              <li>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                </svg>
+                +38 000 129900</li>
+
+              <li>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
+                </svg>
+                sky_high@gmail.com</li>
+              <br>
+              <li>
+                Experience sky high app on mobile</li>
+              <li><button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+                <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+              </li><br>
+              <li>Keep in Touch</li>
+                <a class="icon-f" href="#"><i class="social-icon fab fa-facebook-f"></i></a>
+                <a class="icon-f" href="#"><i class="social-icon fab fa-twitter sp"></i></a>
+                <a class="icon-f" href="#"><i class="social-icon fab fa-instagram sp"></i></a>
+                <a class="icon-f" href="#"> <i class="social-icon fas fa-envelope sp"></i></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-info footer-mid">
+            <ul>
+              <li><a class="link-color" href="privacy.html">Privacy Policy</a> </li>
+              <li><a class="link-color" href="#"> Feedback </a></li>
+              <li><a class="link-color" href="team.html">T&C</a></li>
+              <li><a class="link-color" href="team.html">Shipping</a></li>
+              <li><a class="link-color" href="team.html">Returns</a></li>
+              <li><a class="link-color" href="team.html">Track Orders</a></li>
+              <li><a class="link-color" href="team.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="compact">
+            <h4>Newsletter Registration</h4>
+            <p>Subscribe today to receive the latest Corpboot news via email. You may unsubscribe from this service at any time</p>
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter your Email...">
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <br>
+      <h5>Popular Searches</h5>
+      <p>Adidas | Arrow | Fila | Online Shopping | Nike | Pepe Jeans | Puma | United Colors Of Benetton | Shorts | Being Human | Skirts | Woodland | Supra | Dresses | Clothing | T Shirts | Shoes | Shirts | Kurtas | Lingerie | Jackets | Skechers |
+        Saree | Sandals | Puma Tshirts | Woodland Shoes | Wrangler Shirts | Adidas Tshirts | Nike Shoes | Roadster Shirts | Casual Shoes | Running Shoes | Nike Sports Shoes | Jeans | Being Human Tshirts | Converse Shoes | Cricket Shoes</p>
+    </div>
+  </footer>
+
+  <div class="sub-footer" style="background-image: url(img/black.png); background-size: cover;">
+    <div class="col-md-sm">
+      <div class="copyright sub-footer-text">
+        &copy; Sky-High. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------------->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
